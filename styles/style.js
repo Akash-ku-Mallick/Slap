@@ -1,6 +1,6 @@
 import { StyleSheet, Dimensions } from 'react-native'
 import React from 'react'
-import { Colors } from 'react-native-ui-lib';
+import { Colors, Gradient } from 'react-native-ui-lib';
 
 const { width: windowWidth, height: windowHeight } = Dimensions.get("window");
     
@@ -31,15 +31,20 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         width: '100%',
         padding: 10,
+        borderBottomWidth: 1,
+        borderColor: 'black',
+        borderBottomStartRadius: 5,
+        borderBottomEndRadius: 5,
     },
     Icon_text: {
         flexDirection: 'row',
         justifyContent: 'space-around',
         alignItems: 'center',
-        width: '30%',
-        borderWidth: 1,
-        borderColor: 'black',
-        borderRadius: 10,
+    },
+    Icon_text_v: {
+        flexDirection: 'column',
+        justifyContent: 'space-around',
+        alignItems: 'center',
     },
     IconBtn: {
         padding: 10,
@@ -74,10 +79,46 @@ const styles = StyleSheet.create({
         fontWeight: 'bold'
     },
     button: {
-        backgroundColor: 'black',
         padding: 10,
+        alignItems: 'center',
+        borderWidth: 1,
+        borderColor: 'black',
+    },
+    btnSmallCurve: {
         borderRadius: 10,
-        alignItems: 'center'
+    },
+    btnMidCurve: {
+        borderRadius: 15,
+    },
+    btnLargeCurve: {
+        borderRadius: 20,
+    },
+    btnRound: {
+        borderRadius: 150,
+    },
+    btnWideSmall: {
+        height: 50,
+        width: 240,
+    },
+    btnWideMid: {
+        height: 80,
+        width: 240,
+    },
+    btnWideLarge: {
+        height: 120,
+        width: 240,
+    },
+    btnSqSmall: {
+        height: 50,
+        width: 50,
+    },
+    btnSqMid: {
+        height: 80,
+        width: 80,
+    },
+    btnSqLarge: {
+        height: 120,
+        width: 120,
     },
     buttonText: {
         color: 'white',
@@ -109,6 +150,9 @@ const styles = StyleSheet.create({
         alignItems: 'flex-start',
         backgroundColor: 'white',
     },
+    home_bg: {
+        backgroundColor: Colors.dark30,
+    }
 })
     
 
