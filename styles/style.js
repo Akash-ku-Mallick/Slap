@@ -1,4 +1,4 @@
-import { StyleSheet, Dimensions } from 'react-native'
+import { StyleSheet, Dimensions, StatusBar } from 'react-native'
 import React from 'react'
 import { Colors, Gradient } from 'react-native-ui-lib';
 
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: 'white',
         justifyContent: 'flex-start',
-        padding: 0,
+        paddingTop: StatusBar.currentHeight,
         alignContent: 'center',
     },
     header_container: {
@@ -33,8 +33,9 @@ const styles = StyleSheet.create({
         padding: 10,
         borderBottomWidth: 1,
         borderColor: 'black',
-        borderBottomStartRadius: 5,
-        borderBottomEndRadius: 5,
+        borderTopStartRadius: 20,
+        borderTopEndRadius: 20,
+        elevation: 20,
     },
     Icon_text: {
         flexDirection: 'row',
@@ -45,6 +46,12 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         justifyContent: 'space-around',
         alignItems: 'center',
+    },
+    header_btn: {
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 10,
+        padding: 10,
     },
     IconBtn: {
         padding: 10,
@@ -81,6 +88,7 @@ const styles = StyleSheet.create({
     button: {
         padding: 10,
         alignItems: 'center',
+        justifyContent: 'center',
         borderWidth: 1,
         borderColor: 'black',
     },
@@ -130,6 +138,17 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         fontSize: 18
     },
+    modal_container: {
+        flex: 1,
+        height: windowHeight,
+        width: windowWidth,
+        margin: 0,
+        zIndex: 3,
+    },
+    center:{
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
     drawer_container: {
         flex: 1,
         height: windowHeight,
@@ -137,6 +156,7 @@ const styles = StyleSheet.create({
         justifyContent: 'flex-start',
         alignItems: 'flex-start',
         margin: 0,
+        zIndex: 3,
     },
     drawer: {
         backgroundColor: 'white',
@@ -152,6 +172,56 @@ const styles = StyleSheet.create({
     },
     home_bg: {
         backgroundColor: Colors.dark30,
+    },
+    modal: {
+        borderTopLeftRadius: 20,
+        borderTopRightRadius: 20,
+        elevation: 20,
+    },
+    searchBar: {
+        elevation: 20,
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        width: windowWidth-20,
+        height: 50,
+        padding: 10,
+        norderTopLeftRadius: 20,
+        marginHorizontal: 10,
+        marginTop: 10,
+    },
+    elivation: {
+        elevation: 20,
+    },
+    mainBtn: {
+        padding: 10,
+        alignItems: 'center',
+        borderWidth: 1,
+        borderColor: 'black',
+        borderRadius: 100,
+        justifyContent: 'center',
+        alignItems: 'center',
+        width: 180,
+        height: 180,
+    },
+    welcomeText: {
+        flexDirection: 'column',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        gap: 20,
+        position: 'absolute',
+        bottom: 10,
+        
+    },
+    home_btmbtn: {
+        padding: 20, 
+        width: '100%', 
+        justifyContent: 'center', 
+        alignItems: 'center', 
+        position: 'absolute', 
+        bottom: 0, 
+        borderTopLeftRadius: 20, 
+        borderTopRightRadius: 20, 
+        elevation: 190
     }
 })
     

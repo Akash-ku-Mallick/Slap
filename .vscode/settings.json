@@ -1,0 +1,10 @@
+{
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "emulator.emulatorPath": "C:\\Users\\Akash\\AppData\\Local\\Android\\Sdk\\emulator",
+    "emulator.emulatorPathWindows": "C:\\Users\\Akash\\AppData\\Local\\Android\\Sdk\\emulator",
+    "emulator.androidColdBoot": true,
+    "java.project.sourcePaths": [
+        "."
+    ]
+}

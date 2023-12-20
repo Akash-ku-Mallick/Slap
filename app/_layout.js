@@ -1,6 +1,6 @@
 import {ThemeManager} from 'react-native-ui-lib';
 
-import { Slot, Stack } from 'expo-router';
+import { Stack } from 'expo-router';
 
 
 export default function Layout() {
@@ -89,22 +89,6 @@ export default function Layout() {
 
 
   return (
-    <Stack
-      screenOptions={{
-        headerStyle: {
-          backgroundColor: "white",
-        },
-        headerTintColor: "black",
-        headerTitleAlign: "center",
-        headerTitleStyle: {
-          fontWeight: "bold",
-          fontSize: 18,
-        },
-      }}
-    >
-      <Stack.Screen name="index" options={{headerShown: false}}/>
-      <Stack.Screen name="home" options={{headerShown: false}} />
-    </Stack>
-  
+    <Stack/>
   );
 }
